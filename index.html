@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iury Nogueira · dev fullstack</title>
+  <meta name="description" content="Dev fullstack (Angular + Node), governança de TI, IA e automação. Barista e apaixonado por praia. Sintonize.">
+  <meta name="theme-color" content="#120b07">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Iury Nogueira · dev fullstack">
+  <meta property="og:description" content="Dev fullstack (Angular + Node), governança de TI, IA e automação. Barista e apaixonado por praia. Sintonize.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/6165180?v=4">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-power="on">
+  <a class="skip-link" href="#content" data-i18n="skip">Pular para o conteúdo</a>
+
+  <div class="tv" id="tv">
+    <div class="tv__bezel">
+      <div class="tv__screen" id="screen">
+        <div class="screen-inner" id="screen-inner">
+          <div class="channels" aria-hidden="true"><div id="yt-player"></div></div>
+          <canvas class="static" id="static" aria-hidden="true"></canvas>
+          <div class="fx fx--vline" aria-hidden="true"></div>
+          <div class="fx fx--scanlines" aria-hidden="true"></div>
+          <div class="fx fx--vignette" aria-hidden="true"></div>
+
+          <div class="osd osd--channel" id="osd-channel" aria-live="polite"></div>
+          <div class="osd osd--volume" id="osd-volume"></div>
+          <div class="osd osd--signal" id="osd-signal"></div>
+
+          <div class="tv-content" id="tv-content">
+            <div class="page glitchy">
+              <header class="header">
+                <div class="header__bar">
+                  <nav class="nav" aria-label="Principal">
+                    <ol class="crumbs">
+                      <li><a class="crumbs__home" href="#/">IN</a></li>
+                      <li class="crumbs__current">
+                        <span class="text-nav" id="text-nav" contenteditable="true" spellcheck="false"
+                          role="textbox" aria-label="" data-i18n-aria="textNav" autocapitalize="off"></span>
+                      </li>
+                    </ol>
+                    <ul class="menu">
+                      <li><a href="#/projects" data-i18n="nav.projects">programação</a></li>
+                      <li><a href="#/open-source" data-i18n="nav.oss">open-source</a></li>
+                      <li><a href="#/menu" data-i18n="nav.menu">cardápio</a></li>
+                    </ul>
+                  </nav>
+                  <div class="header__info">
+                    <div id="date"></div>
+                    <div class="ch-ctrl">
+                      <button class="ch-ctrl__btn" data-action="prev" data-i18n-aria="chPrev">◄</button>
+                      <span id="ch-label">CH 01</span>
+                      <button class="ch-ctrl__btn" data-action="next" data-i18n-aria="chNext">►</button>
+                    </div>
+                    <div class="ch-name" id="ch-name"></div>
+                    <div class="cups" id="cups"></div>
+                    <div class="toggles">
+                      <button class="toggle" data-action="mute" id="sound-btn" aria-pressed="false"></button>
+                      <button class="toggle" data-action="lang" data-i18n="langBtn" data-i18n-aria="langLabel">EN</button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+
+              <main class="page-content" id="content" tabindex="-1"></main>
+
+              <footer class="footer">
+                <ul class="link-list">
+                  <li><a href="https://github.com/iurynogueira" target="_blank" rel="noopener noreferrer">GITHUB</a></li>
+                  <li><a href="https://www.linkedin.com/in/iury-nogueira/" target="_blank" rel="noopener noreferrer">LINKEDIN</a></li>
+                  <li><a href="https://dev.to/iurynogueira" target="_blank" rel="noopener noreferrer">DEV.TO</a></li>
+                  <li><a href="https://www.instagram.com/iurynogueiraa/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
+                  <li><a href="mailto:nogueiraiury20@gmail.com">EMAIL</a></li>
+                </ul>
+                <div class="footer__side">
+                  <p class="hint" data-i18n="hint"></p>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <button class="power-hint" data-action="power" data-i18n="powerHint"></button>
+      </div>
+    </div>
+  </div>
+
+
+  <noscript>
+    <style>.tv-content{opacity:1}</style>
+    <p class="noscript">Iury Nogueira — dev fullstack. <a href="https://github.com/iurynogueira">github.com/iurynogueira</a></p>
+  </noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
